@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil deGrasse Tyson</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <h1 class="header">Neil deGrasse Tyson</h1>
+</head>
+
+<body>
+<div>
+    <img src="./photos/NDT.JPG" class="photo" alt="Neil deGrasse Tyson">
+    <p class="description">
+        Neil deGrasse Tyson is born on October 5, 1958 and is an American astrophysicist, planetary scientist, author, and science communicator. <br><br>
+        Tyson studied at Harvard University, the University of Texas at Austin, and Columbia University. From 1991 to 1994, he was a postdoctoral research associate at Princeton University. 
+        In 1994, he joined the Hayden Planetarium as a staff scientist and the Princeton faculty as a visiting research scientist and lecturer. 
+        In 1996, he became director of the planetarium and oversaw its $210 million reconstruction project, which was completed in 2000. 
+        Since 1996, he has been the director of the Hayden Planetarium at the Rose Center for Earth and Space in New York City. 
+        The center is part of the American Museum of Natural History, where Tyson founded the Department of Astrophysics in 1997 and has been a research associate in the department since 2003.
+        <br><br>
+        From 1995 to 2005, Tyson wrote monthly essays in the "Universe" column for Natural History magazine, some of which were later published in his books Death by Black Hole (2007) 
+        and Astrophysics for People in a Hurry (2017). During the same period, he wrote a monthly column in StarDate magazine, answering questions about the universe under the pen name "Merlin". 
+        Material from the column appeared in his books Merlin's Tour of the Universe (1998) and Just Visiting This Planet (1998). 
+        Tyson served on a 2001 government commission on the future of the U.S. aerospace industry and on the 2004 Moon, Mars and Beyond commission. 
+        He was awarded the NASA Distinguished Public Service Medal in the same year. From 2006 to 2011, he hosted the television show NOVA ScienceNow on PBS. Since 2009, 
+        Tyson has hosted the weekly podcast StarTalk. A spin-off, also called StarTalk, began airing on National Geographic in 2015. 
+        In 2014, he hosted the television series Cosmos: A Spacetime Odyssey, a successor to Carl Sagan's 1980 series Cosmos: 
+        A Personal Voyage. The U.S. National Academy of Sciences awarded Tyson the Public Welfare Medal in 2015 for his "extraordinary role in exciting the public about the wonders of science"
+    </p>
+</div>
+
+<div class="container">
+    <h2 class="header-events">Upcoming Events</h2> 
+            <div class="upcoming-events">
+                <ul>
+                    <li>Event Name.</li>
+                    <li>Location.</li>
+                    <li>Date.</li>
+                </ul>
+            </div>
+            <div class="upcoming-events">
+                <ul>
+                    <li>Event Name.</li>
+                    <li>Location.</li>
+                    <li>Date.</li>
+                </ul>
+            </div>
+            <div class="upcoming-events">
+                <ul>
+                    <li>Event Name.</li>
+                    <li>Location.</li>
+                    <li>Date.</li>
+                </ul>
+            </div>
+</div>
+
+<br><br>
+
+<div>
+    <button class="button" onclick="myFonction()">Style Me</button>
+</div>
+
+<div class="container">
+    <h2 class="articles">Articles</h2> 
+            <div class="articles">
+                <h4 class="art-name">Astrophysics for People in a Hurry</h4>
+                <p>Astrophysics for People in a Hurry is a 2017 popular science book by Neil deGrasse Tyson, centering around a number of basic questions about the universe. 
+                    Published on May 2, 2017, by W. W. Norton & Company, the book is a collection of Tyson's essays that appeared in Natural History magazine at various 
+                    times from 1997 to 2007.</p>
+            </div>
+            <div class="articles">
+                <h4 class="art-name">Cosmos: A Spacetime Odyssey</h4>
+                <p>Cosmos: A Spacetime Odyssey is a 2014 American science documentary television series. The show is a follow-up to the 1980 television series Cosmos: A Personal Voyage, 
+                    which was presented by Carl Sagan on the Public Broadcasting Service and is considered a milestone for scientific documentaries. This series was developed to bring 
+                    back the foundation of science to network television at the height of other scientific-based television series and films. The show is presented by astrophysicist Neil deGrasse Tyson,
+                     who, as a young high school student, was inspired by Sagan. Among the executive producers are Seth MacFarlane, whose financial investment was instrumental 
+                     in bringing the show to broadcast television, and Ann Druyan, a co-author and co-creator of the original television series and Sagan's wife.
+                     The show is produced by Brannon Braga, and Alan Silvestri composed the backing score.</p>
+            </div>
+            <div class="articles">
+                <h4 class="art-name">Death by Black Hole</h4>
+                    <p>Death by Black Hole: And Other Cosmic Quandaries is a 2007 popular science book written by Neil deGrasse Tyson. 
+                        It is an anthology of several of Tyson's most popular articles, all published in Natural History magazine between 1995 and 2005, and was featured in 
+                        an episode of The Daily Show with Jon Stewart.</p>
+            </div>
+
+        </div>
+
+<div class="form">
+    <h2>Your Favorite Scientist</h2>
+    <input type="text" id="myText" value="Favorite Scientist">
+
+    <button onclick="myFunction()" id="submit-form">Submit</button>
+    
+    <p id="fav-scientist"></p>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("fav-scientist").innerHTML = x;
+            }
+        </script>
+</div>
+
+</body>
+</html>
